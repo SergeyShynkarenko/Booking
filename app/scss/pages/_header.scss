@@ -1,0 +1,132 @@
+.header {
+	background-color: #fff;
+	position: relative;
+	height: 100vh;
+	width: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+	&__top {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__logo {
+		img {
+			width: 200px;
+			height: 100px;
+		}
+	}
+	.menu__list {
+		padding-top: 25px;
+		display: flex;
+		&-item {
+			list-style-type: none;
+			& + .menu__list-item {
+				margin-left: 90px;
+			}
+		}
+		&-link {
+			font-size: 20px;
+			color: #fff;
+			line-height: 1.2;
+			position: relative;
+			transition: font-weight .5s ease;
+			&.active {
+				font-weight: 700;
+				border-bottom: 2px solid #FFFFFF;
+			}
+			&::before {
+				content: "";
+				position: absolute;
+				width: 0;
+				left: auto;
+				right: 0;
+				bottom: -2px;
+				background-color: #fff;
+				height: 2px;	
+				transition: all .3s;
+			}
+			&:hover {
+				color: #fff;
+				text-decoration: none;
+				font-weight: 700;
+			}
+			&:hover::before {
+				width: 100%;
+				right: auto;
+				left: 0;
+			}
+		}
+	}
+	&__content {
+		color: #fff;
+		margin-top: 130px;
+		width: 550px;
+	}
+	&__title {
+		line-height: 0px;
+		display: inline-block;
+		.welcome {	
+			font-size: 40px;
+			font-weight: 400;
+		}
+		.hotels {
+			display: inline-block;
+			font-family: AGaramondPro, sans-serif;
+			font-size: 50px;
+			font-weight: 700;
+			margin-top: 55px;
+			letter-spacing: 0.4em;
+		}
+		.luxury {
+			display: inline-block;
+			font-family: AGaramondPro, sans-serif;
+			font-size: 100px;
+			font-weight: 700;
+			color: #fff;
+			margin-top: 75px;
+			letter-spacing: 0.07em;
+		}	
+	}	
+	&__text {
+		font-size: 20px;
+		line-height: 1.2;
+	}
+}
+.calendar__button {
+	text-align: center;
+	.header__button {
+		margin-top: 30px;
+		font-weight: 700;
+		padding: 20px 33px 20px 78px;
+		position: relative;
+		transition: all .5s ease;
+		&::before {
+			content: '';
+			background-image: url("../../images/dest/calendar-btn.svg");
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 32px;
+			width: 28px;
+			height: 24px;
+		}
+	}
+}
+.scroll__btn {
+	text-align: center;
+	margin-top: 30px;
+	p {
+		font-size: 20px;
+		color: #fff;
+		margin-bottom: 5px;
+	}
+	a {
+
+		img {
+			width: 40px;
+			height: 40px;
+		}
+	}
+}

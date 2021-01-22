@@ -33,7 +33,7 @@ $gutter: $grid-gutter-width;
 @include font('Montserrat', normal, 400, '../fonts/Montserrat-Regular (1).woff2');
 @include font('Montserrat', normal, 700, '../fonts/Montserrat-Bold (1).woff2');
 @include font('AGaramondPro', normal, 700, '../fonts/AGaramondPro-Bold.woff');
-@include font('Roboto', italic, 700, '../fonts/Roboto-Regular.woff2');
+@include font('Roboto', normal, 700, '../fonts/Roboto-Regular.woff2');
 
 // GENERAL DOCUMENT STYLES
 
@@ -51,9 +51,42 @@ input, textarea {
 	&:focus:required:invalid { border-color: red }
 	&:required:valid { border-color: green }
 }
+.container {
+	max-width: 1170px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.section-overley {
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(20, 39, 74, 0.5);
+		z-index: -1;
+	}
+}
+.button {
+	display: inline-block;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	padding: 20px 67px;
+	background-color: #E0B973;
+	border-radius: 10px;
+	&:hover {
+		background-color: #efa266;
+		text-decoration: none;
+		color: #fff;
+	}
+}
 
 body {
-	font-family: $roboto;
+	font-family: $montserrat;
 	font-size: $fontsize;
 	font-weight: $fweight;
 	min-width: 320px;
