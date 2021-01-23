@@ -1,5 +1,4 @@
 .header {
-	background-color: #fff;
 	position: relative;
 	height: 100vh;
 	width: auto;
@@ -10,11 +9,13 @@
 	&__top {
 		display: flex;
 		justify-content: space-between;
+		.hamburger {
+			display: none;
+		}
 	}
 	&__logo {
 		img {
-			width: 200px;
-			height: 100px;
+			height: 90px;
 		}
 	}
 	.menu__list {
@@ -27,11 +28,9 @@
 			}
 		}
 		&-link {
-			font-size: 20px;
 			color: #fff;
 			line-height: 1.2;
 			position: relative;
-			transition: font-weight .5s ease;
 			&.active {
 				font-weight: 700;
 				border-bottom: 2px solid #FFFFFF;
@@ -61,45 +60,45 @@
 	}
 	&__content {
 		color: #fff;
-		margin-top: 130px;
 		width: 550px;
+		flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 	}
 	&__title {
-		line-height: 0px;
-		display: inline-block;
-		.welcome {	
-			font-size: 40px;
+		line-height: 1;
+		&-welcome {
+			font-size: 30px;
 			font-weight: 400;
 		}
-		.hotels {
-			display: inline-block;
+		&-luxury {
 			font-family: AGaramondPro, sans-serif;
-			font-size: 50px;
-			font-weight: 700;
-			margin-top: 55px;
-			letter-spacing: 0.4em;
-		}
-		.luxury {
-			display: inline-block;
-			font-family: AGaramondPro, sans-serif;
-			font-size: 100px;
+			font-size: 80px;
 			font-weight: 700;
 			color: #fff;
-			margin-top: 75px;
 			letter-spacing: 0.07em;
 		}	
+		&-hotels {
+			line-height: 0.5;
+			font-family: AGaramondPro, sans-serif;
+			font-size: 40px;
+			font-weight: 700;
+			letter-spacing: 0.4em;
+		}
 	}	
 	&__text {
-		font-size: 20px;
+		font-size: 17px;
 		line-height: 1.2;
 	}
 }
 .calendar__button {
 	text-align: center;
+	margin-bottom: 15px;
+	z-index: -1;
 	.header__button {
-		margin-top: 30px;
 		font-weight: 700;
-		padding: 20px 33px 20px 78px;
+		padding: 15px 10px 15px 48px;
 		position: relative;
 		transition: all .5s ease;
 		&::before {
@@ -108,25 +107,23 @@
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
-			left: 32px;
+			left: 10px;
 			width: 28px;
 			height: 24px;
 		}
 	}
 }
 .scroll__btn {
+	margin-bottom: 15px;
 	text-align: center;
-	margin-top: 30px;
 	p {
-		font-size: 20px;
 		color: #fff;
 		margin-bottom: 5px;
 	}
 	a {
-
 		img {
-			width: 40px;
-			height: 40px;
+			width: 30px;
+			height: 30px;
 		}
 	}
 }
