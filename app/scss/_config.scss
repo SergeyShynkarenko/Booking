@@ -77,6 +77,10 @@ input, textarea {
 	}
 }
 
+img {
+	max-width: 100%;
+}
+
 body {
 	font-family: $montserrat;
 	font-size: $fontsize;
