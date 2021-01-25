@@ -1,11 +1,11 @@
 .rooms {
 	&__inner {
 		padding: 60px 0 95px;
-		@media (max-width : 680px) {
-			padding: 45px 0 65px;
+		@media (max-width : 990px) {
+			padding: 50px 0 0 0;
 		}
-		@media (max-width : 320px) {
-			padding: 35px 0 45px;
+		@media (max-width : 480px) {
+			padding: 50px 0 0 0;
 		}
 	}
 	&__title {
@@ -13,6 +13,9 @@
 		font-size: 25px;
 		font-weight: 400;
 		text-align: center;
+		@media (max-width : 990px) {
+			margin-bottom: 70px;
+		}	
 		@media (max-width : 680px) {
 			margin-bottom: 25px;
 		}
@@ -21,24 +24,13 @@
 		}
 	}
 }
+
 .room {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 70px;
-	position: relative;
-	&::before {
-		content: "";
-		border: 1px solid #14274A;
-		position: absolute;
-		height: 230px;
-		left: -35px;
-		bottom: 103px;
-		@media (max-width : 1170px) {
-			display: none;
-		}
-	}
 	@media (max-width : 990px) {
-		flex-wrap: wrap;
+		flex-direction: column;
 		justify-content: center;
 	}
 	@media (max-width : 480px) {
@@ -48,10 +40,26 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		flex: 1;
 		margin-right: 70px;
 		@media (max-width : 990px) {
 			text-align: center;
 			margin-right: 0;
+			order: 2;
+			margin-top: 40px;
+		}
+		&-inner {
+			position: relative;
+			&::before {
+				content: "";
+				border: 1px solid #14274A;
+				position: absolute;
+				left: -35px;
+				height: 100%;
+				@media (max-width : 1170px) {
+					display: none;
+				}
+			}
 		}
 		&-title {
 			font-family: AGaramondPro, sans-serif;
@@ -63,7 +71,7 @@
 			@media (max-width : 1160px) {
 				font-size: 40px;
 			}
-			@media (max-width : 1160px) {
+			@media (max-width : 990px) {
 				font-size: 35px;
 			}
 			@media (max-width : 480px) {
@@ -85,37 +93,17 @@
 		}
 	}
 	&__img {
-		img {
-			width: 650px;
-			height: 450px;
-			@media (max-width : 990px) {
-				max-width: 100%;
-				height: auto;
-			}
+		width: 660px;
+		height: 360px;
+		overflow: hidden;
+		@media (max-width : 990px) {
+			width: 100%;
 		}
+
 	}
 }
 
-.room__views {
-	display: flex;
-	justify-content: space-between;
-	position: relative;
-	&::before {
-		content: "";
-		border: 1px solid #14274A;
-		position: absolute;
-		height: 285px;
-		left: -35px;
-		bottom: 75px;
-		@media (max-width : 1170px) {
-			display: none;
-		}
-	}
-	@media (max-width : 990px) {
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-}
+
 
 
 	
