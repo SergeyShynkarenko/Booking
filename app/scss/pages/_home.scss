@@ -153,7 +153,8 @@
 			li {
 				button {
 					&::before {
-						font-size: 45px;
+						opacity: 1;
+						font-size: 30px;
 						color: #C4C4C4;
 					}
 				}
@@ -161,7 +162,7 @@
 			.slick-active {
 				button {
 					&::before {
-						font-size: 50px;
+						font-size: 35px;
 						color: #14274A;
 						opacity: 1;
 					}
