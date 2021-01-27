@@ -1,0 +1,135 @@
+.footer {
+	margin-top: 75px;
+	color: #fff;
+	background-color: #14274A;
+	padding: 65px 0;
+	position: relative;
+	&::after {
+	  content: ''; 
+	  position: absolute;
+	  left: 50%;
+	  transform: translateX(-50%); 
+	  top: -95px;
+		border: 62px solid transparent; 
+		border-bottom: 38px solid #14274A;
+	}
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width : 990px) {
+			flex-wrap: wrap;
+		}
+		@media (max-width : 520px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	&__item {
+		@media (max-width : 520px) {
+			margin-bottom: 20px;
+		}
+		&--form {
+			@media (max-width : 990px) {
+				margin: 0 auto;
+				text-align: center;
+			}
+			@media (max-width : 672px) {
+				margin-top: 20px;
+			}
+			@media (max-width : 520px) {
+				margin-top: 0;
+			}
+		}
+		&-logo {
+			@media (max-width : 520px) {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		&-contacts {
+			margin-top: 20px;
+			font-size: 14px;
+			line-height: 1.1;
+			@media (max-width : 520px)  {
+				text-align: center;
+			}
+			.contact__address {
+				margin: 0;
+			}
+			.contact__phone {
+				display: block;
+			}
+		}
+	}
+	
+	&-list {
+		list-style: none;
+		font-size: 16px;
+		li {
+			margin-bottom: 10px;
+		}
+	}
+
+	.social__list {
+		list-style: none;
+		line-height: 1.7;
+		@media (max-width : 1070px) {
+			margin-right: 20px;
+		}
+		@media (max-width : 672px) {
+			margin-top: 20px;
+		}
+		@media (max-width : 520px) {
+			margin-top: 0;
+		}
+		span {
+			padding-left: 20px;
+		}
+	}
+
+	&-form {
+		margin-top: 30px;
+		display: flex;
+		@media (max-width : 990px) {
+			margin-top: 20px;
+		}
+		&__input {
+			background-color: transparent;
+			border: 2px solid #E0B973;
+			color: #fff;
+			font-size: 16px;
+			padding: 0 25px;
+			border-radius: 3px;
+			height: 45px;
+			width: 245px;
+			@media (max-width : 520px) {
+				width: 200px;
+			}
+			@media (max-width : 460px) {
+				width: 180px;
+				height: 40px;
+				font-size: 12px;
+			}
+			&::placeholder {
+				color: #fff;
+			}
+		}
+		&__btn {
+			background-color: #E0B973;
+			font-size: 16px;
+			border: 2px solid #E0B973;
+			color: #14274A;
+			border-radius: 3px;
+			margin-left: -5px;
+			height: 45px;
+			width: 80px;
+			padding: 0 18px;
+			text-transform: uppercase;
+			@media (max-width : 460px) {
+				height: 40px;
+				font-size: 12px;
+				width: 55px;
+			}
+		}
+	}
+}
