@@ -1,0 +1,149 @@
+.room {
+	&__cards {
+		padding: 50px 0;
+		&-title {
+			text-align: center;
+			font-size: 50px;
+    	font-family: AGaramondPro,sans-serif;
+    	@media (max-width : 720px) {
+				font-size: 40px;
+			}
+		}
+		&-text {
+			text-align: center;
+			@media (max-width : 550px) {
+				font-size: 15px;
+			}
+		}
+	}
+	&__card {
+		border: 2px solid #14274A;
+		margin-top: 50px;
+		.card {
+			&-slider {
+				&__img {
+					width: 900px;
+					height: 550px;
+				  background-repeat: no-repeat;
+				  background-position: center center;
+				  background-size: cover;
+				  @media (max-width : 640px) {
+						height: 500px;
+					}
+					@media (max-width : 480px) {
+						height: 400px;
+					}
+					@media (max-width : 320px) {
+						height: 330px;
+					}
+				}
+				.slick-dots {
+					bottom: 25px;
+					li {
+						width: 10px;
+						height: 10px;
+						button {
+							&::before {
+								opacity: 1;
+								color: transparent;
+								border: 2px solid #FFFFFF;
+								border-radius: 50%;
+								width: 10px;
+								height: 10px;
+							}
+						}
+					}
+					.slick-active {
+						button {
+							&::before {
+								background-color: #fff;
+								opacity: 1;
+							}
+						}
+					}
+				}
+			}
+			&__title {
+				font-size: 30px;
+				background-color: #14274A;
+				padding: 20px 0;
+				color: #fff;
+				text-align: center;
+				margin-top: -30px;
+				@media (max-width : 760px) {
+					font-size: 25px;
+				}
+			}
+			&__info {
+				display: flex;
+				justify-content: space-between;
+				padding: 40px 120px;
+				@media (max-width : 760px) {
+					padding: 40px 15px;
+				}
+				@media (max-width : 760px) {
+					flex-direction: column;
+					align-items: center;
+				}
+				@media (max-width : 320px) {
+					padding: 15px 15px;
+				}
+				.details {
+					display: flex;
+					align-items: center;
+					.fas {
+						position: relative;
+						width: 40px;
+						height: 40px;
+						background-color: #E0B973;
+						border-radius: 50%;
+						color: #fff;
+						font-size: 25px;
+						@media (max-width : 760px) {
+							width: 35px;
+							height: 35px;
+							font-size: 20px;
+						}
+						@media (max-width : 480px) {
+							width: 30px;
+							height: 30px;
+							font-size: 15px;
+						}
+						&::before {
+							position: absolute;
+							top: 50%;
+							left: 50%;
+		    			transform: translate(-50%, -50%);
+						}
+					}
+					span {
+						margin-left: 20px;
+						font-weight: bold;
+					}
+				}
+				.price__btn {
+					font-size: 15px;
+					padding: 15px 35px;
+					font-weight: bold;
+					width: 210px;
+					display: flex;
+					justify-content: space-between;
+					@media (max-width : 760px) {
+						margin-top: 20px;
+					}
+					@media (max-width : 480px) {
+						padding: 15px 15px;
+						width: 165px;
+					}
+					@media (max-width : 480px) {
+						padding: 10px 10px;
+						width: 155px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+

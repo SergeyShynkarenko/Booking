@@ -26,13 +26,20 @@ $(function() {
   	]
 	});
 
+	$('.card-slider').slick({
+		dots: true,
+		arrows: false,
+		slidesToScroll: 1,
+		slidesToShow: 1
+	});
+
 });
 
 
-import {TimeLineMax} from 'gsap';
-let tl = new TimeLineMax();
+// import {TimeLineMax} from 'gsap';
+// let tl = new TimeLineMax();
 
-tl
-	.fromTo('.header__logo', 1, {y:-100,opacity: 0}, {y: 0,opacity: 1})
+// tl
+// 	.fromTo('.header__logo', 1, {y:-100,opacity: 0}, {y: 0,opacity: 1})
 
 
