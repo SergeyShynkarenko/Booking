@@ -11,6 +11,7 @@ let paths = {
 	scripts: {
 		src: [
 			// 'node_modules/jquery/dist/jquery.min.js', // npm vendor example (npm i --save-dev jquery)
+			'node_modules/gsap/dist/gsap.min.js',
 			baseDir + '/libs/jquery/dist/jquery.min.js',
 			baseDir + '/libs/slick/slick.min.js',
 			baseDir + '/js/app.js' // app.js. Always at the end
@@ -46,6 +47,7 @@ const imagemin     = require('gulp-imagemin');
 const newer        = require('gulp-newer');
 const rsync        = require('gulp-rsync');
 const del          = require('del');
+
 
 function browsersync() {
 	browserSync.init({

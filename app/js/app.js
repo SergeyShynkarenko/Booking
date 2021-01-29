@@ -1,4 +1,5 @@
 $(function() {
+
 	$('.hamburger').on('click', function() {
 		$('.hamburger').toggleClass('is-active');
 		$('.menu__list').toggleClass('menu__list--active');
@@ -26,4 +27,12 @@ $(function() {
 	});
 
 });
+
+
+import {TimeLineMax} from 'gsap';
+let tl = new TimeLineMax();
+
+tl
+	.fromTo('.header__logo', 1, {y:-100,opacity: 0}, {y: 0,opacity: 1})
+
 
