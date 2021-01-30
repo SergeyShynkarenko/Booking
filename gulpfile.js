@@ -47,6 +47,7 @@ const newer        = require('gulp-newer');
 const rsync        = require('gulp-rsync');
 const del          = require('del');
 
+
 function browsersync() {
 	browserSync.init({
 		server: { baseDir: baseDir + '/' },
