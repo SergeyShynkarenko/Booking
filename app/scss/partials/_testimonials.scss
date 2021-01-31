@@ -7,6 +7,12 @@
 	&__title {
 		font-size: 50px;
 		font-family: AGaramondPro, sans-serif;
+  	@media (max-width : 768px) {
+			font-size: 40px;
+		}
+		@media (max-width : 520px) {
+			font-size: 35px;
+		}
 	}
 	&__slider {
 		position: relative;	
