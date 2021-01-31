@@ -1,0 +1,43 @@
+.facilities {
+	padding: 50px 0;
+	&__title {
+		@media (max-width : 768px) {
+			font-size: 35px;
+		}
+	}
+	&__item {
+		margin-top: 120px;
+		position: relative;
+	  @media (max-width : 768px) {
+			margin-top: 50px;
+		}
+		.facilities__text {
+			line-height: 30px;
+		}
+		span {
+			position: absolute;
+			display: block;
+			bottom: -1px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 440px;
+			height: 50px;
+			background-color: #fff;
+			text-align: center;
+			font-size: 30px;
+			font-weight: bold;
+			padding: 16px 20px 0;
+			@media (max-width : 768px) {
+				font-size: 25px;
+				width: 300px;
+			}
+			@media (max-width : 480px) {
+				padding: 0 15px;
+				width: 130px;
+				font-size: 15px;
+				height: 30px;
+				line-height: 1.1;
+			}
+		}
+	}
+}
