@@ -71,6 +71,7 @@ input, textarea {
 	background-color: #E0B973;
 	border-radius: 8px;
 	cursor: pointer;
+	border: none;
 	&:hover {
 		background-color: #deb214;
 		text-decoration: none;
@@ -106,3 +107,9 @@ body {
 	overflow-x: hidden;
 	color: $textcolor;
 }
+
+.title {
+	font-size: 45px;
+	font-family: AGaramondPro,sans-serif;
+}
+

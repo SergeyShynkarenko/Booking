@@ -3,9 +3,7 @@
 		padding: 50px 0;
 		&-title {
 			text-align: center;
-			font-size: 45px;
-	  	font-family: AGaramondPro,sans-serif;
-	  	@media (max-width : 720px) {
+	  	@media (max-width : 768px) {
 				font-size: 35px;
 			}
 		}
