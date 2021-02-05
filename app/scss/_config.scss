@@ -36,6 +36,8 @@ $gutter: $grid-gutter-width;
 @include font('Montserrat', normal, 400, '../fonts/Montserrat-Regular (1).woff2');
 @include font('Montserrat', normal, 700, '../fonts/Montserrat-Bold (1).woff2');
 @include font('AGaramondPro', normal, 700, '../fonts/AGaramondPro-Bold.woff');
+@include font('Slick', normal, 400, '../fonts/slick.woff');
+@include font('Slick', normal, 400, '../fonts/slick.ttf');
 
 // GENERAL DOCUMENT STYLES
 
